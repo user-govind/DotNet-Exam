@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "View";
+}
+
+<html>
+<head>
+    <title>Product Store site</title>
+    @Styles.Render("~/Content/css")
+</head>
+
+<body>
+
+    
+
+    <div class="container">
+        <h1 class="alert alert-info text-center">CDAC-MUMBAI Store</h1>
+        <div class="row">
+            <div class="col-lg-8">
+                @RenderBody()
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+@RenderSection("scripts", required: false)
+</html>
+
+
+
+
+
+
